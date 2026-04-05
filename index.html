@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Professional Resume - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="dark-mode-toggle">Dark Mode</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="profile-section">
+    <figure>
+        <img src="C:\Users\Administrator\Documents\PIT1.2\avatars\profile.png" alt="Avatar" id="profile-img">
+        <figcaption id="visitor-greeting">Welcome to my resume!</figcaption>
+    </figure>
+    <h1 id="main-title">Rudhz G. Gucor</h1>
+    <p class="subtitle">SECOND YEAR STUDENT</p>
+</section>
+
+<div class="page-content">
+
+    <div id="greeting-banner"></div>
+
+    <div class="card" id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated IT student with a passion for building interactive, user-friendly websites. I enjoy solving problems and learning new web technologies.</p>
+    </div>
+
+    <div class="card" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>University of Science and Technology</strong> - Current</li>
+            <li><strong>Phinma Cagayan de Oro College Senior High School</strong> - Graduated</li>
+            <li><strong>Misamis Oriental General Comprehensive High School</strong> - Graduated</li>
+            <li><strong>Gusa Elementary School</strong> - Graduated</li>
+        </ul>
+    </div>
+
+    <div class="card" id="skills">
+        <h2>Skills</h2>
+
+        <div class="form-group">
+            <input type="text" id="skill-search" placeholder="🔍 Search skills (e.g., HTML, CSS)...">
+        </div>
+
+        <ul class="skill-list" id="main-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6)</li>
+            <li>Responsive Web Design</li>
+        </ul>
+
+        <ul class="skill-list hidden" id="extra-skills" style="display: none;">
+            <li>jQuery</li>
+            <li>Git & GitHub</li>
+            <li>UI/UX Prototyping</li>
+            <li>JSON & APIs</li>
+        </ul>
+        <button id="toggle-skills-btn" class="btn btn-primary">View More Skills</button>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Contact Me</h2>
+        <div class="form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Your message here..." rows="4" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="button" id="submit-btn" class="btn btn-primary">Send Message</button>
+            </form>
+            <div id="form-feedback" class="success-message hidden" style="display: none;"></div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Rudhz G. Gucor. Built with HTML, CSS, JavaScript & jQuery.</p>
+    <ul class="social-links">
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:alex@example.com">Email</a></li>
+    </ul>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
